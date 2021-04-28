@@ -4,13 +4,13 @@
 }
 
 .firstParagrah > div{
-    display: inline-table;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .ImageContainer{
-    width: 40%;
+    width: 45%;
     text-align: center;
-    vertical-align: middle;
 }
 
 .ImageContainer img{
@@ -18,18 +18,13 @@
 }
 
 .textContainer{
-    width: 60%;
-}
-
-.textContainer p{
+    position: relative;
+    left: -17px;
+    padding-right: 30px;
+    width: 55%;
+    text-align: justify;
+     line-height: 30px;
     font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.5px;
 }
-
-.firstParagrahTable{
-    width: 100%;
-}
-
 
 
