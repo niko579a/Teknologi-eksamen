@@ -1,0 +1,53 @@
+.firstParagrah{
+    width: 100%;
+    margin-top: 25px;
+}
+.textContainer{
+    position: relative;
+    left: 17px;
+    padding-right: 30px;
+    width: 55%;
+    text-align: justify;
+     line-height: 30px;
+    font-size: 30px;
+}
+.topnav input[type=text] {
+    size:50;
+    padding: 8px;
+    width: 450px;
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: 2px solid;
+  }
+.topnav input:focus {
+    outline: none;
+}
+.topnav label[for="title"] {
+    position: relative;
+    left: 6px;
+    padding-right: 30px;
+    width: 55%;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 20px;
+}
+
+.selectBox select[name="kategorier"] {
+    padding: 8px;
+    width: 450px;
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: 2px solid;
+    outline: none;
+}
+.selectBox label[for="kategorier"] {
+    position: relative;
+    left: 6px;
+    padding-right: 30px;
+    width: 55%;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 20px;
+}

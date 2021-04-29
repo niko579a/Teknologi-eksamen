@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tilføj en ret</title>
     <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/addFood.css">
 </head>
 <body>
     <!-- navigation bar -->
     <div class= "nav">
-        <div class="first logo"><h1 class="Name"><a href="./index.html">MadBeregner</a><h1></div>
+        <div class="first logo"><h1 class="Name"><a href="./index.html">MealMate</a><h1></div>
         <div class="first one"><h2><a href="./chooseFood.html">Vælg ret</a></h2></div>
         <div class= "first two"><h2><a href="./addFood.html">Tilføj ret</a></h2></div>
         <div class= "first three"><h2><a href="./requestFood.html">Ønsk en ret</a></h2></div>
@@ -19,6 +20,30 @@
     <!-- navigation bar  end -->
 
     <!-- addFood css-->
+    <div class="Text"> 
+        <div class="textContainer"><p>Tilføj en ret</p>
+    </div>
+    <div class="topnav">
+        <label for="title"> Title</label><br>
+        <input type="text" placeholder="Title..." maxlength="50" size="50">
+      </div>
+    <div class="selectBox">
+        <label for="kategorier"> Kategorier</label><br>
+        <select name="kategorier" id="Kategorier">
+            <option value="mexicanske retter">Mexicanske retter</option>
+            <option value="vegetarretter">Vegetarretter</option>
+            <option value="italienske retter">Italienske retter</option>
+            <option value="kinesiske retter">Kinesiske retter</option>
+            <option value="indiske retter">Indiske retter</option>
+          </select>
+    </div>
+    <form action="/action_page.php">
+        <input type="checkbox" id="tilgenligehed1" name="tilgenligehed1" value="Offentlige">
+        <label for="tilgenligehed1"> Offentlige</label><br>
+
+        <input type="checkbox" id="tilgenligehed2" name="tilgenligehed2" value="Private">
+        <label for="tilgenligehed2"> Private</label><br>
+      </form>
     <!-- addFood css end-->
 </body>
 </html>
