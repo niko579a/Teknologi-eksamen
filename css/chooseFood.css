@@ -1,0 +1,67 @@
+.pageTitle{
+    margin-left: 2.3%;
+    font-size: 26px;
+    margin-top: 2.5%;
+}
+
+.cardsContainer{
+    width: 100%;
+}
+
+.card{
+    display: table-cell;
+    width: 49%;
+    padding-top: 1%;
+}
+
+.cardImage > img{
+    width: 100%;
+    margin-left: 11%;
+    margin-top: 35%;
+}
+
+.cardImage{
+    display: table-cell;
+    width: 40%;
+}
+
+.cardText{
+    display: table-cell;
+    width: 100%;
+    font-size: 20px;
+    vertical-align: top;
+    padding-top: 10%;
+    padding-left: 7%;
+}
+
+.rattingStarsContainer{
+    position: relative; 
+    top: -15px;
+}
+.rattingStarsContainer img{
+    height: auto;
+    width: 40px;
+    margin: 0px 5px ; 
+}
+
+#discriptionTextSpagetthi{
+    position: relative; top: -25px;
+    margin-left: 2px;
+}
+
+#discriptionTextLagsagne{
+    position: relative; top: -25px;
+}
+
+#discriptionTextTaco{
+    position: relative; top: -25px;
+}
+
+#discriptionTextChiliConCarne{
+    position: relative; top: -25px;
+}
+
+.readMore{
+    position: relative; left: 640px;
+    position: top: 0.1px;
+}
