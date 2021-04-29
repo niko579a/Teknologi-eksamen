@@ -4,6 +4,11 @@
     margin-top: 2.5%;
 }
 
+#foodFilterTitle{
+    margin-left: 25px;
+    padding-top:  10px;
+}
+
 .cardsContainer{
     width: 100%;
 }
@@ -63,5 +68,12 @@
 
 .readMore{
     position: relative; left: 640px;
-    position: top: 0.1px;
+}
+
+.foodFilter{
+    text-indent: 5px;
+    height: 40px;
+    width: 200px;
+    margin-left: 32px;
+    margin-top: 35px;
 }
