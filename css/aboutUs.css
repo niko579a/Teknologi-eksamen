@@ -1,0 +1,29 @@
+.textOnPage{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.textOnPage > div{
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.ImageHolder{
+    width: 45%;
+    text-align: center;
+}
+
+.ImageHolder img{
+    width: 80%;
+}
+
+.textHolder{
+    position: relative;
+    left: -17px;
+    padding-right: 30px;
+    width: 55%;
+    text-align: justify;
+     line-height: 30px;
+    font-size: 20px;
+}
+
