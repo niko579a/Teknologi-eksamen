@@ -8,7 +8,18 @@
     margin-top: 50px;
 }
 
+.sceondInformation{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
 input{
     margin-left: 10px;
+}
 
+.confirmButton{
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 7px 25px;
+    font-size: 15px;
 }
