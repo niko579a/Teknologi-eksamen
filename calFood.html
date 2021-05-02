@@ -19,5 +19,20 @@
         <div class= "line"></div>
     </div>
     <!-- navigation bar  end -->
+
+    <!-- calFood css start -->
+    <div>
+        <div class="textOnPage"><p><b>Indtast de forskellige informationer neden for:</b></p>
+        </div>
+        <div class="informationOnPage">
+            <p>Hvor mange personer er retten til? <select id="peopleAmount" oninput="peopleAmountSelected()"><option disabled selected>Vælg antal</option></select></p>
+        </div>
+        <div id="personDetailsDiv" hidden></div>
+        <button onclick="calFood()">Beregn</button>
+    </div>
+     <!-- calFood css end -->
 </body>
+<script src="./js/recipes.js"></script>
+<script src="./js/person.js"></script>
+<script src="./js/calFood.js"></script>
 </html>
