@@ -11,21 +11,141 @@
      line-height: 30px;
     font-size: 30px;
 }
-.topnav input[type=text] {
+* {
+    box-sizing: border-box;
+  }
+  
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.titleBox input[type=text] {
     size:50;
     padding: 8px;
     width: 450px;
-    margin-top: 8px;
+    margin-left: 8px;
     font-size: 17px;
     border-radius: 25px;
     border: 2px solid;
   }
-.topnav input:focus {
+.titleBox input:focus {
     outline: none;
 }
-.topnav label[for="title"] {
+.titleBox label[for="title"] {
     position: relative;
-    left: 6px;
+    left: 20px;
+    padding-right: 30px;
+    width: 55%;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 20px;
+}
+.picInput input[type="file"] {
+    width: 500px;
+    border: 2px solid green;
+    margin-left: 20px;
+    margin:20px; 
+	padding: 100px; 
+}
+.picInput label[for="choose a fil"]{
+    position: relative;
+    left: 20px;
+    padding-top: 20px;
+    width: 55%;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 20px;
+}
+
+.selectBox select[name="categories"] {
+    position: relative;
+    left: 10px;
+    padding: 8px;
+    width: 450px;
+    margin-top: 8px;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: 2px solid;
+    outline: none;
+    
+}
+.selectBox label[for="categories"] {
+    position: relative;
+    left: 20px;
+    padding-right: 30px;
+    width: 55%;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 20px;
+}
+.textBox textarea[name="boxText"]{
+    width: 500px;
+    border: 2px solid green;
+    padding: 50px;
+    margin-left: 20px;
+    outline: none;
+}
+.textBox label[for="choose a fil"]{
+    position: relative;
+    left: 20px;
+    padding-top: 20px;
+    width: 55%;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 20px;
+}
+
+
+.radioMark label[for="availabilitytext"] {
+    position: relative;
+    left: 20px;
+    padding-top: 20px;
+    width: 55%;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 20px;
+}
+.radioMark label[for="availability"] {
+    position: relative;
+    left: 20px;
+}
+.radioMark input[type="radio"] {
+    text-align: justify;
+    line-height: 50px;
+   font-size: 20px;
+    position: relative;
+    left: 20px;
+}
+
+.radioMark textarea[id="boxText"]{
+    position: relative;
+    left: 550px;
+    padding: 8px;
+    width: 450px;
+    margin-top: 8px;
+    text-align: justify;
+     line-height: 50px;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 2px solid;
+    outline: none;
+}
+
+.radioMark label[for="allergies"]{
+    position: relative;
+    left: 20px;
     padding-right: 30px;
     width: 55%;
     text-align: justify;
@@ -33,21 +153,22 @@
     font-size: 20px;
 }
 
-.selectBox select[name="kategorier"] {
+.radioMark input[type=text]{
+    size:50;
     padding: 8px;
     width: 450px;
-    margin-top: 8px;
+    margin-left: 8px;
     font-size: 17px;
     border-radius: 25px;
     border: 2px solid;
     outline: none;
 }
-.selectBox label[for="kategorier"] {
+.uploadButton button[type="button"]{
     position: relative;
-    left: 6px;
+    left: 20px;
     padding-right: 30px;
-    width: 55%;
-    text-align: justify;
-     line-height: 50px;
-    font-size: 20px;
+    margin-top: 85px;
+    border-radius: 10px;
+    border: 2px solid green;
+    outline: none;
 }

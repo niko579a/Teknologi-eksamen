@@ -20,30 +20,66 @@
     <!-- navigation bar  end -->
 
     <!-- addFood css-->
-    <div class="Text"> 
+    <div.a class="Text"> 
         <div class="textContainer"><p>Tilføj en ret</p>
     </div>
-    <div class="topnav">
-        <label for="title"> Title</label><br>
-        <input type="text" placeholder="Title..." maxlength="50" size="50">
-      </div>
-    <div class="selectBox">
-        <label for="kategorier"> Kategorier</label><br>
-        <select name="kategorier" id="Kategorier">
-            <option value="mexicanske retter">Mexicanske retter</option>
-            <option value="vegetarretter">Vegetarretter</option>
-            <option value="italienske retter">Italienske retter</option>
-            <option value="kinesiske retter">Kinesiske retter</option>
-            <option value="indiske retter">Indiske retter</option>
-          </select>
-    </div>
-    <form action="/action_page.php">
-        <input type="checkbox" id="tilgenligehed1" name="tilgenligehed1" value="Offentlige">
-        <label for="tilgenligehed1"> Offentlige</label><br>
 
-        <input type="checkbox" id="tilgenligehed2" name="tilgenligehed2" value="Private">
-        <label for="tilgenligehed2"> Private</label><br>
-      </form>
+    <div class="row">
+        <!-- venstre side-->
+        <div class="column">
+            <div.a class="titleBox">
+                <span>
+                <label for="title"> Title</label><br>
+                <input type="text" placeholder="Title..." maxlength="50" size="50">
+                <span style="display:inline-block; width: 15px;"></span>
+            </div.a>
+            <div class="selectBox">
+                <label for="categories"> Kategorier</label><br> 
+                <select name="categories" id="categories">
+                    <option value="choose a dish" >Vælge en ret</option>
+                    <option value="mexican dishes">Mexicanske retter</option>
+                    <option value="vegetarian dishes">Vegetar retter</option>
+                    <option value="italian dishes">Italienske retter</option>
+                    <option value="chinese dishes">Kinesiske retter</option>
+                    <option value="indian dishes">Indiske retter</option>
+                </select><br><br>
+            </div>
+            <div class="radioMark">
+                <label for="availabilitytext"> Tilgenligehed</label><br>
+                
+                <input type="radio" id="availability1" name="availability" value="Offentlige">
+                <label for="availability"> Offentlige</label><br>
+        
+                <input type="radio" id="availability2" name="availability" value="Private">
+                <label for="availability"> Private</label><br><br>
+
+                <label for="allergies"> Allergier</label><br>
+                <input type="text" placeholder="Allergier..." maxlength="50" size="70">
+            </div>
+
+            <div class="uploadButton">
+                <button type="button" onclick="alert('Tilføjet ret!')"style=background-color:#32CD32;>Tilføj</button>
+            </div>
+    
+        </div>
+        <!-- højder side-->
+        <div class="column">
+             <!-- upload fil/picture-->
+            <div class="picInput">
+                <label for="choose a fil"> Vælge en fil</label><br>
+                <input type="file" id="myFile" name="filename"> 
+            </div>
+            <div class="textBox">
+                <label for="choose a fil"> Ingredienser</label><br>
+                <textarea name="boxText" rows="4" cols="50" style="max-height:280px;">
+                    Ingredienser...
+                </textarea><br>
+            </div>
+        </div>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- addFood css end-->
 </body>
+<script src="js/addFood.js"></script>
 </html>
