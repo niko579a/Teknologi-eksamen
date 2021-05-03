@@ -166,7 +166,7 @@
 .uploadButton button[type="button"]{
     position: relative;
     left: 20px;
-    padding-right: 30px;
+    padding-right: 40px;
     margin-top: 85px;
     border-radius: 10px;
     border: 2px solid green;
