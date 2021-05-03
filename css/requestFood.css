@@ -37,3 +37,7 @@ input{
     font-weight: bold;
     font-style: italic;
 }
+
+.informationBox{
+    padding: 5px 20px;
+ }

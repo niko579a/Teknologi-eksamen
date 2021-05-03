@@ -11,6 +11,17 @@
     font-weight: bold;
 }
 
+.amountOfDinners{
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+.calculateFood{
+    padding: 10px 15px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
 #personDetailsDiv{
     max-width: 100%;
 }
