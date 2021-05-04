@@ -73,6 +73,11 @@ function calFood() {
     let CaloriesPrGramPrIngredient = 0;
     let caloriesPrPart = 0;
     let finalRecipeRatio = [];
+    let totalAmountOfIngredients = 0;
+    let gramPrIngredientFinal = 0;
+    let totalGrams = 0;
+    let finalResult = [];
+    let finalTotalGrams = [];
     
     selectpeopleAmount.hidden = true;
     personDetailsDiv.hidden = true;
@@ -100,18 +105,21 @@ function calFood() {
         totalCaloriesPrGramPrIngredients += value; 
     });
 
-    //dividerer antallet af ingredienser kalorier med den samlet værdi af gram pr kalorie
-    CaloriesPrGramPrIngredient = totalCaloriesPrGramPrIngredients / choosenRecipe.amountOfIngredients.length;
-    
-    //Dividerer antal af folks prioterede mad med forrige resultat
-    caloriesPrPart = totalMealPriority / CaloriesPrGramPrIngredient;
-
-    choosenRecipe['amountOfIngredients'].forEach(amount => {
-        console.log(amount);
-        finalRecipeRatio.push(caloriesPrPart * amount);
+    choosenRecipe['amountOfIngredients'].forEach(value => {
+        totalAmountOfIngredients += value; 
     });
 
-    displayCalFood(finalRecipeRatio);
+    //dividerer antallet af ingredienser kalorier med den samlet værdi af gram pr kalorie
+    CaloriesPrGramPrIngredient = totalCaloriesPrGramPrIngredients / totalAmountOfIngredients;
+
+    totalGrams = totalMealPriority / CaloriesPrGramPrIngredient;
+
+    choosenRecipe['amountOfIngredients'].forEach(value => {
+        let result = (totalGrams / 100) * value;
+        finalTotalGrams.push(result);
+    });
+
+    displayCalFood(finalTotalGrams);
 }
 
 function displayCalFood(result) {
