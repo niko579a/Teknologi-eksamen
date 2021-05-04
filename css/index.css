@@ -15,6 +15,7 @@
 
 .ImageContainer img{
     width: 80%;
+    border: 2px solid;
 }
 
 .textContainer{

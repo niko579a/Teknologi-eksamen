@@ -22,6 +22,8 @@ input{
     margin-top: 30px;
     padding: 7px 25px;
     font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 .thridInformation{
@@ -31,13 +33,15 @@ input{
 }
 
 .ekstraInfo{
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 30px;
-    padding-top: 10px;
+    padding-top: 5px;
     font-weight: bold;
     font-style: italic;
 }
 
 .informationBox{
     padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
  }
