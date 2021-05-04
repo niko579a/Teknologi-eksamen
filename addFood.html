@@ -25,14 +25,16 @@
     </div>
 
     <div class="row">
-        <!-- venstre side-->
+        <!-- venstre side af hjemmeside-->
         <div class="column">
+             <!-- Her kan man angive titlen på retten-->
             <div.a class="titleBox">
                 <span>
                 <label for="title"> Angiv titlen på retten:</label><br>
                 <input type="text" placeholder="Title..." maxlength="50" size="50">
                 <span style="display:inline-block; width: 15px;"></span>
             </div.a>
+             <!-- Down bar for kategorier-->
             <div class="selectBox">
                 <label for="categories"> Kategorisere retten:</label><br> 
                 <select name="categories" id="categories">
@@ -44,8 +46,9 @@
                     <option value="indian dishes">Indiske retter</option>
                 </select><br><br>
             </div>
+             <!-- Valg om man vil lave retten offentlig eller privat-->
             <div class="radioMark">
-                <label for="availabilitytext"> Tilgængelighed</label><br>
+                <label for="availabilitytext"> Tilgængelighed:</label><br>
                 
                 <input type="radio" id="availability1" name="availability" value="Offentlige">
                 <label for="availability"> Offentlig</label><br>
@@ -53,22 +56,23 @@
                 <input type="radio" id="availability2" name="availability" value="Private">
                 <label for="availability"> Privat</label><br><br>
 
-                <label for="allergies"> Tilføj evt. allergier</label><br>
+                <label for="allergies"> Tilføj evt. allergier:</label><br>
                 <input type="text" placeholder="Allergier..." maxlength="50" size="70">
             </div>
-
+             <!-- Når man uploader, får man en alert hvor der står "Tilføjet ret!"-->
             <div class="uploadButton">
                 <button type="button" onclick="alert('Tilføjet ret!')">Tilføj</button>
             </div>
     
         </div>
-        <!-- højder side-->
+        <!-- højder side af hjemmeside-->
         <div class="column">
              <!-- upload fil/picture-->
             <div class="picInput">
                 <label for="choose a fil"> Vælg en fil med en opskrift til retten herunder:</label><br>
                 <input type="file" id="myFile" name="filename"> 
             </div>
+             <!-- her skal man skrive ingredienser-->
             <div class="textBox">
                 <label for="choose a fil"> Angtiv rettens ingredienser herunder:</label><br>
                 <textarea name="boxText" rows="4" cols="50" style="max-height:280px;">
