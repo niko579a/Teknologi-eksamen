@@ -33,3 +33,24 @@
     margin: 5px;
 }
 
+.titleOnPage{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.sceondTitleOnPage{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.recipeText{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+

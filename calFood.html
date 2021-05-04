@@ -22,15 +22,37 @@
 
     <!-- calFood css start -->
     <div>
-        <div class="textOnPage"><p><b>Indtast de forskellige informationer neden for:</b></p>
+        <div id="titleOnPage" hidden class="textOnPage"><p><b>Indtast de forskellige informationer neden for:</b></p>
         </div>
-        <div class="informationOnPage">
+        <div id="selectpeopleAmount" class="informationOnPage">
             <p>Hvor mange personer er retten til? <select class="amountOfDinners" id="peopleAmount" oninput="peopleAmountSelected()"><option disabled selected>Vælg antal</option></select></p>
         </div>
         <div id="personDetailsDiv" hidden></div>
-        <button class="calculateFood" onclick="calFood()">Beregn</button>
+        <button id="calculateFood" class="calculateFood" onclick="calFood()">Beregn</button>
     </div>
      <!-- calFood css end -->
+
+     <!-- recipes.js start -->
+     <div id="displayResult" hidden>
+         <div class="titleOnPage">
+        <p>Ingredienser til opskriften:</p>
+        </div>
+        <ul id="displayResultList">
+        </ul>
+            <p class="sceondTitleOnPage">Opskriften til spaghetti med kødsovs:</p>
+            <div class="recipeText">
+            <p>1. Hak løg og hvidløg.</p>
+            <p>2. Hæld olie i en gryde og varm den op.</p>
+            <p>3. Hæld løg og hvidløg og svits dem af.</p>
+            <p>4. Når løgene er blevet brune, så hæld kødet i gryden og lade det brune.</p>
+            <p>5. Når kødet er brunet så tilsæt hakkede tomater.</p>
+            <p>6. Tilsæt tomatpure til retten.</p>
+            <p>7. Lad det koge i 30min og smag til med selvalgte krydderier som oregano, salt, peber eller lignende.</p>
+            <p>8. Kog vand i en gryde og tilsæt pastaen til det kogende vand.</p>
+            <p>9. Når pastaen og kødsovsen er færdige med at koge, tag begge dele af og sever maden.</p>
+        </div>
+     </div>
+     <!-- recipes.js end -->
 </body>
 <script src="./js/recipes.js"></script>
 <script src="./js/person.js"></script>

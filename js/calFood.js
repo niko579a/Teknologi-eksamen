@@ -15,6 +15,16 @@ const peopleAmountSelect = document.getElementById('peopleAmount');
 
 const personDetailsDiv = document.getElementById('personDetailsDiv');
 
+const selectpeopleAmount = document.getElementById('selectpeopleAmount');
+
+const calculateFoodBtn = document.getElementById('calculateFood');
+
+const displayResult = document.getElementById('displayResult');
+
+const titleOnPage = document.getElementById('titleOnPage');
+
+const displayResultList = document.getElementById('displayResultList');
+
 for (let i = 1; i <= 100; i++) {
     let option = document.createElement('option');
     option.setAttribute('value', i);
@@ -61,7 +71,13 @@ function calFood() {
     let totalCaloriesPrGramPrIngredients = 0;
     let CaloriesPrGramPrIngredient = 0;
     let caloriesPrPart = 0;
+    let finalRecipeRatio = [];
+    
+    selectpeopleAmount.hidden = true;
+    personDetailsDiv.hidden = true;
 
+    calculateFoodBtn.hidden = true;
+    
     allPersoninputs.forEach(person => {
         //En persons daglige kalorieindtag
         if (person.gender == 'male') {
@@ -89,4 +105,20 @@ function calFood() {
     //Dividerer antal af folks prioterede mad med forrige resultat
     caloriesPrPart = totalMealPriority / CaloriesPrGramPrIngredient;
 
+    choosenRecipe['amountOfIngredients'].forEach(amount => {
+        console.log(amount);
+        finalRecipeRatio.push(caloriesPrPart * amount);
+    });
+
+    displayCalFood(finalRecipeRatio);
+}
+
+function displayCalFood(result) {
+    displayResult.hidden = false;
+
+    for (let i = 0; i < result.length; i++) {
+        let li = document.createElement('li');
+        li.innerHTML = `${choosenRecipe.ingredients[i]}: ${result[i]} g`;
+        displayResultList.appendChild(li);
+    }
 }
