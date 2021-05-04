@@ -38,6 +38,7 @@ function peopleAmountSelected() {
     personDetailsDiv.innerHTML = '';
     createInputs();
     personDetailsDiv.hidden = false;
+    calculateFoodBtn.hidden = false;
 }
 
 function handelRangeInput(range, index){
@@ -118,7 +119,7 @@ function displayCalFood(result) {
 
     for (let i = 0; i < result.length; i++) {
         let li = document.createElement('li');
-        li.innerHTML = `${choosenRecipe.ingredients[i]}: ${result[i]} g`;
+        li.innerHTML = `${choosenRecipe.ingredients[i]}: ${Math.round(result[i])} g`;
         displayResultList.appendChild(li);
     }
 }
