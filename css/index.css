@@ -21,11 +21,17 @@
 .textContainer{
     position: relative;
     left: -17px;
-    padding-right: 30px;
+    padding-right: 20px;
     width: 55%;
     text-align: justify;
-     line-height: 30px;
+    line-height: 30px;
     font-size: 20px;
 }
+
+#pageTitle{
+    margin-left: 60px;
+    font-size: 30px;
+}
+
 
 
