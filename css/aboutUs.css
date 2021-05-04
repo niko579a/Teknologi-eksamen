@@ -1,3 +1,18 @@
+* {
+    box-sizing: border-box;
+  }
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .textOnPage{
     width: 100%;
     margin-top: 25px;
@@ -6,10 +21,11 @@
 .textOnPage > div{
     display:table-cell;
     vertical-align: middle;
+
 }
 
 .ImageHolder{
-    width: 45%;
+    width: 100%;
     text-align: center;
 }
 
@@ -27,5 +43,4 @@
      line-height: 30px;
     font-size: 20px;
 }
-
 
